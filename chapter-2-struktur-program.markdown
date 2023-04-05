@@ -227,6 +227,7 @@ if (num < 10) {
 Program akan pertama-tama memeriksa apakah num kurang dari 10. Jika iya, maka akan memilih cabang itu, menampilkan "Small", dan selesai. Jika tidak, maka akan memilih cabang else, yang sendiri berisi if kedua. Jika kondisi kedua (<100) terpenuhi, itu berarti angka tersebut setidaknya 10 tetapi di bawah 100, dan "Medium" ditampilkan. Jika tidak, cabang else kedua dan terakhir dipilih.
 
 Skema untuk program ini terlihat seperti ini:
+
 ![alt Introduction](https://raw.githubusercontent.com/brothergiez/eloquentjavascript-indo/main/images/controlflow-nested-if.svg)
 
 
