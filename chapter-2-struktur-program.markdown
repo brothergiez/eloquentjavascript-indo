@@ -111,10 +111,10 @@ Kata-kata dengan makna khusus, seperti let, adalah kata kunci, dan mereka tidak 
 Jangan khawatir tentang menghafal daftar ini. Ketika membuat sebuah binding menghasilkan kesalahan sintaks yang tidak terduga, lihat apakah Anda mencoba untuk mendefinisikan kata yang telah direservasi.
 
 ## Environment
-Kumpulan pengikatan dan nilai yang ada pada suatu waktu disebut environment. Ketika sebuah program dimulai, lingkungan ini tidak kosong. Ia selalu berisi pengikatan yang merupakan bagian dari standar bahasa, dan sebagian besar waktu, ia juga memiliki pengikatan yang menyediakan cara untuk berinteraksi dengan sistem sekitarnya. Misalnya, pada browser, terdapat fungsi untuk berinteraksi dengan situs web yang sedang dimuat dan membaca masukan dari mouse dan keyboard.
+Kumpulan pengikatan dan nilai yang ada pada suatu waktu disebut environment. Ketika sebuah program dimulai, environment ini tidak kosong. Ia selalu berisi pengikatan yang merupakan bagian dari standar bahasa, dan sebagian besar waktu, ia juga memiliki pengikatan yang menyediakan cara untuk berinteraksi dengan sistem sekitarnya. Misalnya, pada browser, terdapat fungsi untuk berinteraksi dengan situs web yang sedang dimuat dan membaca masukan dari mouse dan keyboard.
 
 ## Fungsi
-Banyak nilai yang disediakan dalam lingkungan default memiliki tipe fungsi. Fungsi adalah bagian program yang dibungkus dalam nilai. Nilai-nilai tersebut dapat diterapkan untuk menjalankan program yang dibungkus. Misalnya, pada lingkungan browser, pengikatan prompt memiliki fungsi yang menampilkan kotak dialog kecil yang meminta masukan dari pengguna. Ia digunakan seperti ini:
+Banyak nilai yang disediakan dalam environment default memiliki tipe fungsi. Fungsi adalah bagian program yang dibungkus dalam nilai. Nilai-nilai tersebut dapat diterapkan untuk menjalankan program yang dibungkus. Misalnya, pada environment browser, pengikatan prompt memiliki fungsi yang menampilkan kotak dialog kecil yang meminta masukan dari pengguna. Ia digunakan seperti ini:
 
 ```js
 prompt("Masukkan kode sandi");
@@ -480,7 +480,7 @@ Anda sekarang tahu bahwa program dibangun dari pernyataan, yang kadang-kadang se
 
 Menempatkan pernyataan satu sama lain memberi Anda program yang dieksekusi dari atas ke bawah. Anda dapat memperkenalkan gangguan dalam alur kontrol dengan menggunakan pernyataan kondisional (if, else, dan switch) dan perulangan (while, do, dan for).
 
-Binding dapat digunakan untuk menyimpan data di bawah nama, dan berguna untuk melacak status di program Anda. Lingkungan adalah kumpulan binding yang didefinisikan. Sistem JavaScript selalu menempatkan sejumlah binding standar yang berguna ke dalam lingkungan Anda.
+Binding dapat digunakan untuk menyimpan data di bawah nama, dan berguna untuk melacak status di program Anda. environment adalah kumpulan binding yang didefinisikan. Sistem JavaScript selalu menempatkan sejumlah binding standar yang berguna ke dalam environment Anda.
 
 Fungsi adalah nilai khusus yang mengemas bagian program. Anda dapat memanggilnya dengan menulis namaFungsi(argument1, argument2). Pemanggilan fungsi seperti itu adalah ekspresi dan dapat menghasilkan nilai.
 
