@@ -81,7 +81,7 @@ Setiap baris program sebelumnya berisi satu instruksi. Ini bisa ditulis dalam ba
 
 Meskipun itu sudah lebih mudah dibaca daripada deretan bit, itu masih cukup samar. Menggunakan nama daripada angka untuk instruksi dan lokasi memori membantu.
 
-```
+```cpp
  Set "total" to 0.
  Set "count" to 1.
 [loop]
@@ -99,7 +99,7 @@ Apakah Anda dapat melihat bagaimana program ini bekerja pada saat ini? Dua baris
 
 Berikut ini adalah program yang sama yang ditulis menggunakan javascript:	
 
-```
+```js
 let total = 0, count = 1;
 while (count <= 10) {
   total += count;
@@ -115,7 +115,7 @@ Pada akhir program, setelah konstruksi while selesai, operasi console.log diguna
 
 Akhirnya, inilah bagaimana program akan terlihat jika kita memiliki operasi range dan sum yang nyaman tersedia, yang masing-masing membuat kumpulan angka dalam rentang dan menghitung jumlah dari kumpulan angka: 
 
-```
+```js
 console.log(sum(range(1, 10)));
 // → 55
 ```
@@ -168,7 +168,7 @@ Setelah itu, Bab 20 menjelaskan tentang Node.js, dan Bab 21 membangun situs web 
 ## Konvensi tipografi
 Dalam buku ini, teks yang ditulis dengan huruf monospace akan mewakili elemen-elemen dari program - terkadang mereka adalah fragmen yang mandiri, dan terkadang mereka hanya merujuk pada bagian dari program yang terdekat. Program (yang sudah Anda lihat beberapa) ditulis sebagai berikut:
 
-```
+```js
 function factorial(n) {
 	if (n == 0) {
 		return 1;
@@ -181,7 +181,7 @@ function factorial(n) {
 
 Kadang-kadang, untuk menunjukkan output yang dihasilkan oleh sebuah program, output yang diharapkan ditulis setelahnya, dengan dua garis miring dan tanda panah di depan.
 
-```
+```js
 console.log(factorial(8));
 // → 40320
 ```
