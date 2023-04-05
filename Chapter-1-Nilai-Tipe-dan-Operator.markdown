@@ -161,7 +161,7 @@ Kami akan menggunakan console.log dalam contoh kode untuk menunjukkan bahwa kami
 
 Operator lain yang ditunjukkan semuanya beroperasi pada dua nilai, tetapi typeof hanya membutuhkan satu. Operator yang menggunakan dua nilai disebut operator biner, sedangkan operator yang menggunakan satu nilai disebut operator uner. Operator minus dapat digunakan sebagai operator biner dan operator uner.
 
-```
+```js
 console.log(- (10 - 2))
 // → -8
 ```
