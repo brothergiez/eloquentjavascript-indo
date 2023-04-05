@@ -94,7 +94,7 @@ NaN berarti "bukan angka", meskipun itu adalah nilai dari jenis angka. Anda akan
 ## String
 Jenis data dasar selanjutnya adalah string. String digunakan untuk merepresentasikan teks. String ditulis dengan mengapit isinya dengan tanda kutip.
 
-```
+```js
 `Down on the sea`
 "Lie on the ocean"
 'Float on the ocean'
@@ -108,20 +108,20 @@ Untuk memungkinkan karakter-karakter tersebut dimasukkan ke dalam string, notasi
 
 Ambil string berikut:
 
-```
+```js
 "This is the first line\nAnd this is the second"
 ```
 
 Teks sebenarnya yang terkandung adalah ini:
 
-```
+```js
 Ini adalah baris pertama
 Dan ini adalah baris kedua
 ```
 
 Tentu saja, ada situasi di mana Anda ingin backslash dalam string hanya menjadi backslash, bukan kode khusus. Jika dua backslash mengikuti satu sama lain, mereka akan bergabung bersama, dan hanya satu yang akan tersisa dalam nilai string yang dihasilkan. Inilah bagaimana string "Karakter baris baru ditulis seperti "\n"." dapat diungkapkan:
 
-```
+```js
 "Karakter baris baru ditulis seperti \"\\n\"."
 ```
 
@@ -131,7 +131,7 @@ Dan itulah yang dilakukan oleh JavaScript. Tetapi ada satu masalah: representasi
 
 String tidak bisa dibagi, dikalikan, atau dikurangi, namun operator + dapat digunakan pada string. Operator + pada string tidak menambah, tetapi menggabungkan atau menggabungkan dua string. Baris berikut akan menghasilkan string "gabungkan":
 
-```
+```js
 "con" + "cat" + "e" + "nate"
 ```
 
@@ -139,7 +139,7 @@ Nilai string memiliki sejumlah fungsi terkait (metode) yang dapat digunakan untu
 
 String yang ditulis dengan tanda kutip tunggal atau ganda berperilaku sangat mirip - satu-satunya perbedaan terletak pada jenis tanda kutip yang perlu Anda hindari di dalamnya. String yang dikutip dengan backtick, biasanya disebut sebagai template literal, dapat melakukan beberapa trik tambahan. Selain dapat membentang beberapa baris, mereka juga dapat menyisipkan nilai lain.
 
-```
+```js
 `setengah dari 100 adalah ${100 / 2}`
 ```
 
@@ -150,7 +150,7 @@ Ketika Anda menulis sesuatu di dalam ${} pada template literal, hasilnya akan di
 
 Tidak semua operator ditulis dalam bentuk simbol. Beberapa ditulis sebagai kata. Salah satu contohnya adalah operator typeof, yang menghasilkan nilai string yang menamai tipe nilai yang Anda berikan padanya.
 
-```
+```js
 console.log(typeof 4.5)
 // → number
 
@@ -174,7 +174,7 @@ Seringkali berguna untuk memiliki nilai yang membedakan antara dua kemungkinan s
 Perbandingan
 Berikut adalah salah satu cara untuk menghasilkan nilai Boolean:
 
-```
+```js
 console.log(3 > 2)
 // → true
 
@@ -187,7 +187,7 @@ Tanda > dan < adalah simbol tradisional untuk "lebih besar dari" dan "kurang dar
 
 String dapat dibandingkan dengan cara yang sama.
 
-```
+```js
 console.log("Aardvark" < "Zoroaster")
 // → true
 ```
@@ -196,7 +196,7 @@ Cara pengurutan string kira-kira berdasarkan urutan abjad tetapi tidak benar-ben
 
 Operator serupa lainnya adalah >= (lebih besar dari atau sama dengan), <= (kurang dari atau sama dengan), == (sama dengan), dan != (tidak sama dengan).
 
-```
+```js
 console.log("Itchy" != "Scratchy")
 // → true
 
@@ -206,7 +206,7 @@ console.log("Apple" == "Orange")
 
 Hanya ada satu nilai dalam JavaScript yang tidak sama dengan dirinya sendiri, yaitu NaN (“bukan angka”).
 
-```
+```js
 console.log(NaN == NaN)
 // → false
 ```
@@ -219,7 +219,7 @@ Ada beberapa operasi yang dapat diterapkan pada nilai Boolean itu sendiri. JavaS
 
 Operator && mewakili logika dan. Ini adalah operator biner, dan hasilnya benar hanya jika kedua nilai yang diberikan kepadanya adalah benar.
 
-```
+```js
 console.log(true && false)
 // → false
 
@@ -229,7 +229,7 @@ console.log(true && true)
 
 Operator || menunjukkan logika atau. Ini menghasilkan benar jika salah satu dari nilai yang diberikan kepadanya adalah benar.
 
-```
+```js
 console.log(false || true)
 // → true
 
@@ -241,13 +241,13 @@ Tidak ditulis sebagai tanda seru (!). Ini adalah operator tunggal yang membalikk
 
 Ketika mencampur operator Boolean ini dengan operator aritmatika dan lainnya, tidak selalu jelas kapan tanda kurung diperlukan. Pada praktiknya, biasanya Anda dapat mengetahui bahwa dari operator yang telah kita lihat sejauh ini, || memiliki prioritas terendah, kemudian datang &&, kemudian operator perbandingan (>, ==, dan sebagainya), dan kemudian yang lainnya. Urutan ini telah dipilih sehingga, dalam ekspresi yang tipikal seperti berikut, se sedikit mungkin tanda kurung yang diperlukan:
 
-```
+```js
 1 + 1 == 2 && 10 * 10 > 50
 ```
 
 Operator logika terakhir yang akan saya bahas tidak unary, bukan binary, tetapi ternary, beroperasi pada tiga nilai. Ini ditulis dengan tanda tanya dan titik dua, seperti ini:
 
-```
+```js
 console.log(true ? 1 : 2);
 // → 1
 
@@ -268,7 +268,7 @@ Perbedaan makna antara undefined dan null adalah suatu kebetulan dalam desain Ja
 ## Konversi jenis otomatis
 Di bagian Pengantar, saya menyebutkan bahwa JavaScript berusaha keras untuk menerima hampir setiap program yang Anda berikan, bahkan program yang melakukan hal-hal aneh. Hal ini ditunjukkan dengan baik oleh ekspresi berikut:
 
-```
+```js
 console.log(8 * null)
 // → 0
 console.log("5" - 1)
@@ -288,7 +288,7 @@ Ketika sesuatu yang tidak dapat dipetakan ke dalam sebuah angka dengan cara yang
 
 Ketika membandingkan nilai dari tipe yang sama menggunakan ==, hasilnya mudah diprediksi: Anda seharusnya mendapatkan nilai true ketika kedua nilai tersebut sama, kecuali pada kasus NaN. Namun ketika tipe berbeda, JavaScript menggunakan seperangkat aturan yang rumit dan membingungkan untuk menentukan apa yang harus dilakukan. Pada kebanyakan kasus, ia hanya mencoba mengonversi satu dari nilai tersebut ke tipe nilai lainnya. Namun, ketika null atau undefined terjadi pada salah satu sisi operator, maka ia hanya menghasilkan true jika kedua sisi adalah null atau undefined.
 
-```
+```js
 console.log(null == undefined);
 // → true
 console.log(null == 0);
@@ -307,7 +307,7 @@ Operator logika && dan || menangani nilai-nilai dari jenis yang berbeda dengan c
 
 Operator ||, misalnya, akan mengembalikan nilai di sebelah kiri ketika itu dapat dikonversi menjadi true dan akan mengembalikan nilai di sebelah kanan jika tidak. Ini memiliki efek yang diharapkan ketika nilai-nilai adalah Boolean dan melakukan sesuatu yang analog untuk nilai-nilai dari jenis lain.
 
-```
+```js
 console.log(null || "user")
 // → user
 
