@@ -141,7 +141,7 @@ Kenyataan bahwa bahasa tersebut terus berkembang berarti bahwa browser harus ter
 
 Browser web bukanlah satu-satunya platform di mana JavaScript digunakan. Beberapa database, seperti MongoDB dan CouchDB, menggunakan JavaScript sebagai bahasa scripting dan kueri mereka. Beberapa platform untuk pemrograman desktop dan server, terutama proyek Node.js (subjek Bab 20), menyediakan lingkungan untuk pemrograman JavaScript di luar browser.
 
-# Kode, dan Apa yang Dilakukan dengan Kode tersebut
+## Kode, dan Apa yang Dilakukan dengan Kode tersebut
 
 Kode adalah teks yang membentuk program. Sebagian besar bab dalam buku ini mengandung banyak kode. Saya percaya membaca kode dan menulis kode adalah bagian yang tak terpisahkan dari pembelajaran pemrograman. Cobalah untuk tidak hanya sekedar melihat contohnya - baca dengan cermat dan pahami. Awalnya ini mungkin lambat dan membingungkan, tetapi saya berjanji bahwa Anda akan cepat terbiasa. Hal yang sama berlaku untuk latihan-latihan. Jangan mengira Anda mengerti sampai Anda benar-benar menulis solusi yang berfungsi.
 
