@@ -6,7 +6,7 @@
 
 _--Ellen Ullman, Close to the Machine: Technophilia and its Discontents_
 
-![](i/images/chapter_picture_00.jpg)
+![alt Introduction](https://raw.githubusercontent.com/brothergiez/eloquentjavascript-indo/main/images/chapter_picture_00.jpg?token=GHSAT0AAAAAACBAYO7ZQN2JNPSJKRNH7XRMZBNEG2A)
 
 Ini adalah buku tentang menginstruksikan komputer. Komputer sekarang sama umumnya seperti obeng, tetapi jauh lebih kompleks, dan membuat mereka melakukan apa yang Anda inginkan tidak selalu mudah.
 
